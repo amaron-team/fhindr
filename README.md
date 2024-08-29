@@ -53,6 +53,7 @@ _(If the repository doesn't require authentication, name and base url will be th
   <img src=".erb/img/private-key-jwt-auth.png" width="100%"  alt="Client secret authentication"/>
 
 <br>
+
 ### Visualizing data
 
 After saving the new repository, it will now be available for connection in the repository table. Clicking the name of the repository once will activate the connection and
