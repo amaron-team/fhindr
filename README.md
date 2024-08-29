@@ -36,7 +36,6 @@ When starting the application, a new repository connection can be added by press
 <img src=".erb/img/adding-first-repository.png" width="100%"  alt="Adding first repository"/>
 
 <br>
-<br>
 
 ### Authentication
 
@@ -54,7 +53,6 @@ _(If the repository doesn't require authentication, name and base url will be th
   <img src=".erb/img/private-key-jwt-auth.png" width="100%"  alt="Client secret authentication"/>
 
 <br>
-
 ### Visualizing data
 
 After saving the new repository, it will now be available for connection in the repository table. Clicking the name of the repository once will activate the connection and
@@ -75,7 +73,6 @@ You can easily switch between the table view and the raw JSON representation of 
 
 <img src=".erb/img/patient-json-view.png" width="100%"  alt="Patient JSON view"/>
 
-<br>
 <br>
 
 ### Data interaction
@@ -125,7 +122,7 @@ By clicking on "Try it out", the query will automatically be filled in the query
   When using a query that will contain includes, a warning message will appear that table view is not supported yet.<br><br>
   <img src=".erb/img/include-warning.png" width="100%"  alt="Include warning"/><br><br>
 
-- Extension are only supported one level deep. When selecting fields in the field selector, you can only go one level deep. In FHIR extension can contain fields that also contain extensions.
+- Extension are only supported one level deep. When selecting fields in the field selector, you can only go one level deep. In FHIR, extensions can contain fields that also contain extensions.
   To avoid a selection tree that can keep clicking open infinitely, the extensions within extensions have been removed from selection.
 
 
