@@ -1,0 +1,7 @@
+.env
+*.iws
+*.iml
+*.ipr
+.idea
+.vscode
+/.github/
