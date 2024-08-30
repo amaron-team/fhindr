@@ -43,8 +43,7 @@ Fill out the required connection details, currently there are 2 supported method
 Based on what type of authentication is chosen, the required fields will vary.<br>
 _(If the repository doesn't require authentication, name and base url will be the only required fields.)_
 
-- Client secret authentication: Easiest and most well know authentication, only requires a client id and secret. Depending on the repository, scope and
-- audience might be required.<br><br>
+- Client secret authentication: Easiest and most well know authentication, only requires a client id and secret. Depending on the repository, scope and audience might be required.<br><br>
   <img src=".erb/img/client-secret-auth.png" width="100%"  alt="Client secret authentication"/>
 
 <br>
