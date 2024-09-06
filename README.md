@@ -17,6 +17,8 @@
 - [Support](#support)
 - [License Attribution](#license-attribution)
 
+<br>
+
 <a name="introduction"></a>
 ## Introduction
 
@@ -24,10 +26,14 @@ Fhindr is a visualization tool for FHIR (Fast Healthcare Interoperability Resour
 of the contents of a FHIR repo easy and fast.
 Without the need of manually querying the repository using a REST client.
 
+<br>
+
 <a name="installation"></a>
 ## Installation
 
 Fhindr is available for Windows and Mac, installers for the latest release can be found [here](https://github.com/amaron-team/fhindr/releases/latest).
+
+<br>
 
 <a name="user-guide"></a>
 ## User guide
@@ -116,6 +122,8 @@ By clicking on "Try it out", the query will automatically be filled in the query
 
 <img src=".erb/img/ai-question-results.png" width="100%"  alt="AI question result"/>
 
+<br>
+
 <a name="known-limitations"></a>
 ## Known limitations
 
@@ -128,14 +136,14 @@ By clicking on "Try it out", the query will automatically be filled in the query
 - Extension are only supported one level deep. When selecting fields in the field selector, you can only go one level deep. In FHIR, extensions can contain fields that also contain extensions.
   To avoid a selection tree that can keep clicking open infinitely, the extensions within extensions have been removed from selection.
 
-
+<br>
 
 <a name="support"></a>
 ## Support
 
 Bugs or problems while using Fhindr can be reported on our [issues page.](https://github.com/amaron-team/fhindr/issues)
 
-
+<br>
 
 <a name="license-attribution"></a>
 ## License Attribution
