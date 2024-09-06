@@ -4,7 +4,7 @@
 
 <br>
 
-# Fhindr
+# FHINDR
 
 [![Github Tag][github-tag-image]][github-tag-url]
 
