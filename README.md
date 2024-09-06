@@ -15,6 +15,7 @@
 - [User guide](#user-guide)
 - [Known limitations](#known-limitations)
 - [Support](#support)
+- [License Attribution](#license-attribution)
 
 <a name="introduction"></a>
 ## Introduction
@@ -131,6 +132,16 @@ By clicking on "Try it out", the query will automatically be filled in the query
 ## Support
 
 Bugs or problems while using Fhindr can be reported on our [issues page.](https://github.com/amaron-team/fhindr/issues)
+
+
+
+<a name="license-attribution"></a>
+## License Attribution
+
+This project uses third-party libraries that are licensed under the MIT License and other open-source licenses.
+The licenses of direct dependencies are listed in the `licenses/` folder.
+
+Please note that this project may also include transitive dependencies with their own licenses.
 
 [github-tag-image]: https://img.shields.io/github/v/tag/amaron-team/fhindr.svg?label=Version&sort=semver
 [github-tag-url]: https://github.com/amaron-team/fhindr/releases/latest
