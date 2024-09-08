@@ -143,7 +143,7 @@ By clicking on "Try it out", the query will automatically be filled in the query
 
 Bugs or problems while using Fhindr can be reported on our [issues page.](https://github.com/amaron-team/fhindr/issues)
 
-For more information about our FHIR integration projects visit our [website](https://amaron.be), follow us on [LinkedIn](https://www.linkedin.com/company/amaron/mycompany), or contact us at connect@amaron.be. 
+For more information about our FHIR integration projects, visit our [website](https://amaron.be), follow us on [LinkedIn](https://www.linkedin.com/company/amaron/mycompany), or contact us at connect@amaron.be. 
 
 <br>
 
