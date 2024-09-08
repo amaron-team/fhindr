@@ -131,7 +131,7 @@ By clicking on "Try it out", the query will automatically be filled in the query
   When using a query that will contain includes, a warning message will appear that table view is not supported yet.<br><br>
   <img src=".erb/img/include-warning.png" width="100%"  alt="Include warning"/><br>
 
-- The **$everything** query is not supported yet.
+- Table visualization of the **$everything** query is not supported yet.
 
 - Extension are only supported one level deep. When selecting fields in the field selector, you can only go one level deep. In FHIR, extensions can contain fields that also contain extensions.
   To avoid a selection tree that can keep clicking open infinitely, the extensions within extensions have been removed from selection.
