@@ -9,6 +9,7 @@
 - Fixed bug where next page would still be clickable even if there was no next page available
 - Switched separator from | to , for combined array results
 - Improved small UI details
+- Added support for resource parameter (required for some FHIR repositories)
 
 # 1.0.2
 
