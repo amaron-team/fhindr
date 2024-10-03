@@ -60,6 +60,9 @@ _(If the repository doesn't require authentication, name and base url will be th
 
 <br>
 
+- In version 1.1.0 session authentication was added, turn off remember credentials in the repository config to only safe the credentials for current session. _This requires the current credentials to be deleted._<br><br>
+  <img src=".erb/img/session-auth.png" width="100%"  alt="Session authentication"/>
+
 ### Visualizing data
 
 After saving the new repository, it will now be available for connection in the repository table. Clicking the name of the repository once will activate the connection and
@@ -82,6 +85,10 @@ You can easily switch between the table view and the raw JSON representation of 
 
 <br>
 
+From version 1.1 onward includes, revincludes and everything queries.
+
+<img src=".erb/img/everything-view.png" width="100%"  alt="everything-view"/>
+
 ### Data interaction
 
 To see the detailed JSON view of a specific record, any record can be **double-clicked**
@@ -99,6 +106,10 @@ Additionally, some FHIR resources can contain special fields, these fields can b
   <br>
   <br>
   <img src=".erb/img/linked-resource-view.png" width="100%"  alt="Linked resource view"/><br><br>
+- Export table data to excel<br> => When a table is loaded, go to options in the top right and press "Export current selection"
+  <br>
+  <br>
+  <img src=".erb/img/export-table.png" width="100%"  alt="Export table data"/><br><br>
 
 ### AI integration
 
@@ -127,15 +138,18 @@ By clicking on "Try it out", the query will automatically be filled in the query
 <a name="known-limitations"></a>
 ## Known limitations
 
-- Currently, the table view for include and revinclude queries is not supported yet, you can still see the included resources in the JSON view, but in the table only the base resource that was queried will appear.
-  When using a query that will contain includes, a warning message will appear that table view is not supported yet.<br><br>
-  <img src=".erb/img/include-warning.png" width="100%"  alt="Include warning"/><br>
+- ~~Currently, the table view for include and revinclude queries is not supported yet, you can still see the included resources in the JSON view, but in the table only the base resource that was queried will appear.
+  When using a query that will contain includes, a warning message will appear that table view is not supported yet.~~<br>
+**=> Supported in version 1.1.0**
 
-- Table visualization of the **$everything** query is not supported yet.
 
-- Extension are only supported one level deep. When selecting fields in the field selector, you can only go one level deep. In FHIR, extensions can contain fields that also contain extensions.
-  To avoid a selection tree that can keep clicking open infinitely, the extensions within extensions have been removed from selection.
+- ~~Table visualization of the **$everything** query is not supported yet.~~<br>
+**=> Supported in version 1.1.0**
 
+
+- ~~Extension are only supported one level deep. When selecting fields in the field selector, you can only go one level deep. In FHIR, extensions can contain fields that also contain extensions.
+  To avoid a selection tree that can keep clicking open infinitely, the extensions within extensions have been removed from selection.~~<br>
+  **=> Supported in version 1.1.0**
 <br>
 
 <a name="support"></a>
@@ -143,8 +157,7 @@ By clicking on "Try it out", the query will automatically be filled in the query
 
 Bugs or problems while using Fhindr can be reported on our [issues page.](https://github.com/amaron-team/fhindr/issues)
 
-For more information about our FHIR integration projects, visit our [website](https://amaron.be), follow us on [LinkedIn](https://www.linkedin.com/company/amaron/mycompany), or contact us at connect@amaron.be. 
-
+For more information about our FHIR integration projects, visit our [website](https://amaron.be), follow us on [LinkedIn](https://www.linkedin.com/company/amaron/mycompany), or contact us at connect@amaron.be.
 <br>
 
 <a name="license-attribution"></a>
