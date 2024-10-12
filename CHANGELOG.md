@@ -1,3 +1,9 @@
+# 1.1.1
+
+- Fixed scaling issues when OS scaling was not set to 100%
+- Made sure selectable resources become scrollable instead of stacking when there are too many to display on screen at once
+- Fixed bug where no resource would be selected if the user clicked away before confirming selection
+
 # 1.1.0
 
 - Added Include, revinclude & everything query support
