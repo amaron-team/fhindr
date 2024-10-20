@@ -1,3 +1,9 @@
+# 1.1.2
+
+- Fixed bug where previous button wasn't working properly for servers that use the prev keyword instead of previous
+- Optimized some modal scaling when using high OS scaling
+- Prevent application from trying to update on macOS if application is not trusted
+
 # 1.1.1
 
 - Fixed scaling issues when OS scaling was not set to 100%
