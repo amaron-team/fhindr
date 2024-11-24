@@ -17,7 +17,7 @@
 - Added option to configure custom JWT token extensions
 - Added pseudonymization for patient identifiers
 - Fixed bug where changing a field in the field selector while not on the main resource tab would automatically switch the selected tab to default
-- Fixed bug where a failed to load public key error would be thrown during private key JWT authentication when no JWKS url was configured
+- Fixed bug where a "failed to load public key" error would be thrown during private key JWT authentication when no JWKS url was configured
 
 # 1.1.2
 
