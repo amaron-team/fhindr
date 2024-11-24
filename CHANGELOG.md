@@ -1,3 +1,24 @@
+# 1.2.0
+
+- Added authorization code flow support
+- Added option to search on the entire page by pressing ctrl+f
+- Added option to open base64 encoded images and pdf files by clicking the data field in the table
+- Right-clicking a repository name now gives the option to edit, clone or delete the repo
+- Added option to expand the query window by clicking the expand icon
+- Added option to see recent query history and resend requests with one click
+- Added option to save queries, so they can be resent with one click
+- Added clone option to repository configuration
+- Added import option when configuring a new repository
+- Added export repository configuration options
+- Added configurable default search query field
+- Added default page size option
+- Added FHIR Station tracing options
+- Added option to send FHIR queries as POST instead of GET
+- Added option to configure custom JWT token extensions
+- Added pseudonymization for patient identifiers
+- Fixed bug where changing a field in the field selector while not on the main resource tab would automatically switch the selected tab to default
+- Fixed bug where a failed to load public key error would be thrown during private key JWT authentication when no JWKS url was configured
+
 # 1.1.2
 
 - Fixed bug where previous button wasn't working properly for servers that use the prev keyword instead of previous
@@ -37,6 +58,6 @@
 ***Initial release version***
 
 
-# 0.0.1
+# 0.0.1 - 0.0.X
 
-***Internal development version***
+***Internal development versions***
