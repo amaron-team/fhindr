@@ -26,6 +26,8 @@ Fhindr is a visualization tool for FHIR (Fast Healthcare Interoperability Resour
 of the contents of a FHIR repo easy and fast.
 Without the need of manually querying the repository using a REST client.
 
+View a quick demo of Fhindr [here.](https://www.youtube.com/watch?v=TDdmA6vb1AE)
+
 <br>
 
 <a name="installation"></a>
@@ -38,11 +40,13 @@ Fhindr is available for Windows and Mac, installers for the latest release can b
 <a name="user-guide"></a>
 ## User guide
 
-When starting the application, a new repository connection can be added by pressing the + button in the top left.
+When starting the application, a new repository connection can be added by pressing the + button in the top left. There is also an import button available if already have an existing configuration file.
 
 <img src=".erb/img/adding-first-repository.png" width="100%"  alt="Adding first repository"/>
 
 <br>
+
+Right-clicking the repository name will allow you to edit, clone or delete the connection.
 
 ### Authentication
 
@@ -57,6 +61,10 @@ _(If the repository doesn't require authentication, name and base url will be th
 
 - Private key JWT: Most secure authentication, but not supported by all FHIR repositories, requires a private and public (jwks) key.<br><br>
   <img src=".erb/img/private-key-jwt-auth.png" width="100%"  alt="Client secret authentication"/>
+
+<br>
+
+- Authentication code: Interactive authentication, will open an authentication window where a user login is expected. Requires an authorization url and redirect url. optionally a client secret can be used as well<br><br>
 
 <br>
 
@@ -110,7 +118,43 @@ Additionally, some FHIR resources can contain special fields, these fields can b
   <br>
   <br>
   <img src=".erb/img/export-table.png" width="100%"  alt="Export table data"/><br><br>
+- Some FHIR repositories can contain base64 encoded images or pdf files. If Fhindr detects these, they will be purple in the table view. By clicking on them, you can see the contents rendered.
 
+### Query history and favorites
+
+- Click the history icon in the search bar to see the 5 most recent queries. Want to save a query for later? Click the star icon to save it.
+
+### Advanced settings
+
+In the advanced options are available. These can be found by going to the repo settings and clicking the "Advanced settings" tab.
+
+-  Export settings: You can export your configuration either to the clipboard or to a file. The export will always be without 
+client secret or private keys. If you would like to copy an existing connection including the secrets, right-click the repo and 
+clone the existing connection instead.
+
+
+- Default search query: By default the `?_sort=-_lastUpdated` query parameters will be used when no query has been manually entered yet. 
+If you want to change what is used as the default, you can configure it here.
+
+
+- Custom page size: This will add the `_count` parameter to the query so the FHIR repository knows how many pages to send back.
+Setting the `_count` in the query field manually will override this setting, leaving it blank won't add anything to the query.
+
+
+- Amaron tracing parameters: If Fhindr detects that you're sending requests to an Amaron FHIR Station, 2 additional options will be available to enable tracing.
+
+
+- Send queries as POST: Some FHIR server block the use of GET queries, enabling this option will convert all request to POST requests in the backend.
+
+
+- Pseudonymization endpoint: It's possible to configure a pseudonymization endpoint to pseudomize patient identifiers before sending them to the repo.
+If an url is configured here, Fhindr will automatically send blinded EC Point x & y coordinates to the endpoint. When there is a successful response with a new blinded point, 
+Fhindr will unblind the points and replace the identifier in the request with the encoded result.
+
+
+- Custom JWT token extensions: Some FHIR repositories or specific calls might require end-user information when sending the request. 
+Any JSON object put in this field will be added to the JWT token as an extensions when requesting tokens. For example the `ihe_iua` JWT extensions can be added here.
+ 
 ### AI integration
 
 Since it can be quite hard to know exactly what queries to write, we added an AI integration that can help write the FHIR queries.
@@ -138,18 +182,8 @@ By clicking on "Try it out", the query will automatically be filled in the query
 <a name="known-limitations"></a>
 ## Known limitations
 
-- ~~Currently, the table view for include and revinclude queries is not supported yet, you can still see the included resources in the JSON view, but in the table only the base resource that was queried will appear.
-  When using a query that will contain includes, a warning message will appear that table view is not supported yet.~~<br>
-**=> Supported in version 1.1.0**
-
-
-- ~~Table visualization of the **$everything** query is not supported yet.~~<br>
-**=> Supported in version 1.1.0**
-
-
-- ~~Extension are only supported one level deep. When selecting fields in the field selector, you can only go one level deep. In FHIR, extensions can contain fields that also contain extensions.
-  To avoid a selection tree that can keep clicking open infinitely, the extensions within extensions have been removed from selection.~~<br>
-  **=> Supported in version 1.1.0**
+- XML formatting is not supported, all requests will default to JSON and if XML formatting is explicitly requested in the query,
+the table view won't be shown. The JSON view tab will display the XML data as a string. A warning will pop up when requesting XML format.
 <br>
 
 <a name="support"></a>
