@@ -1,3 +1,16 @@
+# 1.2.1
+
+- Added some tooltip icons with extra information about the advanced options, clicking the icon will also copy an example
+- Added the ability to include custom HTTP headers in search requests
+- Added private key JWT support for Google repositories
+- Added some new menu options for opening the release notes and checking for new versions
+- Switching repositories will no longer reset the selected resource and query
+- Editing or creating a repository connection will now automatically select the repository instead of resetting the selection
+- To prevent conflicts with editing, session credentials will now be requested upon initiating the first search request, instead of when selecting the repository
+- Fixed bug where search bar could appear as a white box instead of correctly rendering
+- Fixed bug where requesting the next page while sending the query as a POST request would not work for some repositories
+- Fixed bug where the authentication code flow window could get stuck right before completing the authentication
+
 # 1.2.0
 
 - Added authorization code flow support
