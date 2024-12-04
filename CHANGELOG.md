@@ -1,3 +1,8 @@
+# 1.2.2
+
+- Fixed bug where session credential modal could get stuck when entering credentials
+- Use token endpoint as audience when generating client assertions instead of the FHIR repo audience           
+
 # 1.2.1
 
 - Added some tooltip icons with extra information about the advanced options, clicking the icon will also copy an example
