@@ -1,3 +1,16 @@
+# 1.2.3
+
+- Added a simple query builder to the expanded query modal that allows query parameters to be added as key-value pairs
+- Added a notification that there are no fields selected instead of showing an empty table when there are no fields selected
+- The field selector will now persist custom column order when switching repository instead of resetting back to the default order
+- Removed checkboxes for parents instead of showing them as disabled
+- Improved some encoding logic that prevented some url encoded characters from being used in the search query field
+- Improved search query alignment and spacing
+- Fixed bug where a false boolean would sometimes be displayed as an empty cell in the table view
+- Fixed bug where metadata could not be requested when send as POST was enabled
+- Fixed bug where cloning a repository connection would clone the credentials but not actually save them
+- Resolved an issue where the custom page size setting would add the _count parameter to requests that do not support it
+
 # 1.2.2
 
 - Fixed bug where session credential modal could get stuck when entering credentials
