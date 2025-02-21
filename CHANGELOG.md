@@ -1,3 +1,28 @@
+# 1.3.0
+
+- Completely reworked AI integration settings to allow for custom model configurations and added support for several API formats
+- Extended backend token information to ensure compatibility with more FHIR servers
+- Added support for Basic authentication
+- Added option for OAuth client authentication to include credentials as Basic Auth Header or in the request body
+- Added separate option for no authentication
+- Added option to send paging requests as GET requests when send as POST is configured
+- Added option to parse paging request query into the request body when send as POST is configured
+- Added certificate validation and enabled it by default. When available, certificates in the OS truststore will be trusted by default
+- Added option to disable certificate validation for requests to the FHIR server
+- Added option to disable certificate validation for requests to the authentication server
+- Added an indication to error handling if the error was generated while requesting an access token or when actually sending the query to the repository
+- Added option to automatically determine and use SMART on FHIR scopes based on the query being sent to the repository
+- Added option to select what SMART on FHIR version to use
+- Added option to interact with a list of all values contained in a cell for cells that contain multiple values
+- Added the ability to add a name and description to favorited queries
+- Renamed some authentication methods for clarity
+- Fixed bug where paging requests could fail for FHIR servers using a custom port
+- Fixed bug where paging queries could fail for some repositories when send as POST was configured
+- Fixed bug where duplicate query parameters could be overwritten when sending a request with several parameters with the same key
+- Improved some rendering logic to only show relevant fields when configuring a repository
+- Tweaked several small UI details
+- Backend stability improvements and security fixes
+
 # 1.2.3
 
 - Added a simple query builder to the expanded query modal that allows query parameters to be added as key-value pairs
