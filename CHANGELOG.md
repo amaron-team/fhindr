@@ -1,3 +1,12 @@
+# 1.3.1
+
+- Improved cell values list UI and added copy value buttons
+- Re-enabled auto updates on macOS
+- Added informational tooltips to search bar icons
+- Include full column path in table header when possible
+- Fixed bug where clickable links would not always be highlighted in the cell values list
+- Fixed bug where a private key would be requested instead of a secret when using the "client secret as basic auth header" authentication without storing credentials
+
 # 1.3.0
 
 - Completely reworked AI integration settings to allow for custom model configurations and added support for several API formats
