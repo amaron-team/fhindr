@@ -1,3 +1,14 @@
+# 1.3.2
+
+- Added support for several new encryption algorithms when using private key authentication
+- Expand repository selector by default to have a better overview of all configured repositories
+- Added option to expand and minimize repository selector when querying
+- Added option to adjust sidebar width by dragging
+- Added option to specify assertion audience when using private key authentication
+- Prevent data entry modals from closing when clicking away
+- Improved error handling to make sure more error details are included
+- Fixed bug where clearing the query history would not update in the UI until the modal was reopened
+
 # 1.3.1
 
 - Improved cell values list UI and added copy value buttons
