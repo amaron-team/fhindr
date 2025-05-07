@@ -213,6 +213,11 @@ By clicking on them, you can see the contents rendered and downloadable.
   <br>
   <br>
   <img src=".erb/img/rendered-data-view.png" alt="Rendered data view"/><br><br>
+- Some resources can contain div elements, these contain HTML summaries of the resource. If Fhindr detects these, they will be <span style="color:#378080;">__*mat cyan*__</span> in the table view.
+  By clicking on them, you can see the HTML rendered and downloadable.
+  <br>
+  <br>
+  <img src=".erb/img/rendered-html-view.png" alt="Rendered data view"/><br><br>
 - When a cell contains multiple values, for example, when a person has several given names. All values will be seperated by comma's. These cells can also be clicked to get an overview
 of all the values in the cell. These values might also be interactable and will be highlighted in the same way as they are in the normal table view. When available, some additional metadata will be displayed in the list.
 For example, the name and filetype of the image might also be displayed, even when not selected in the field selector. Some copy button are also available and when needed you can hover over the value to see it in full.
