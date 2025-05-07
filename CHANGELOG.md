@@ -1,3 +1,16 @@
+# 1.3.3
+
+- HTML div elements will now be recognized in the table as an interactable cell and will be rendered when clicked
+- Added support for rendering text and HTML attachments
+- Added ability to move and resize modals
+- Added right-click options to main the content table
+- Automatically remove trailing spaces when not using :exact modifier
+- Changed color of history query name to differentiate from query resource
+- Made sure selected repository automatically scrolls to view when adjusting repository selector size
+- Made sure modals auto-scale to content
+- Made sure Amaron FHIR Station payload tracing can only be enabled if general tracing is also enabled
+- Fixed bug where some extra metadata fields were unintentionally included in Excel export
+
 # 1.3.2
 
 - Added support for several new encryption algorithms when using private key authentication
