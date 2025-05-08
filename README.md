@@ -136,7 +136,7 @@ Below is a list of the additional parameters required for certificate authentica
     - PS256, PS384, PS512: These algorithms use RSA-PSS with SHA-2 hashing, Fhindr supports 256, 384 and 512-bit variants. They are a more secure variant of normal RSA, but not used and supported as often.
     - ES256, ES384; ES512: These algorithms use ECC encryption with SHA-2 hashing. Fhindr supports P-256, P-384 and P-521 curves. These rely on EC public keys and are more compact and efficient than RSA.
     ES384 will also be required for authenticating with the new eHealth EC certificates.
-    - EdDSA : Uses the Edwards-curve Digital Signature Algorithm, This algorithm is fast, compact and highly secure, but now widely supported.
+    - EdDSA : Uses the Edwards-curve Digital Signature Algorithm, This algorithm is fast, compact and highly secure, but not widely supported.
   
 <img src=".erb/img/private-key-jwt-auth.png" alt="Client secret authentication"/>
 
