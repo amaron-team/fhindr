@@ -1,3 +1,31 @@
+# 1.4.0
+
+- Added support for drag and drop FHIR visualization. Take any valid FHIR resource, and Fhindr will visualize it in the same way as if it came from a repository. Referenced resources will be clickable if they are contained within the resource
+- Added automatic sorting of Digirelab bundles. When dropping a bundle, the Observations will automatically be sorted in the correct order based on the DiagnosticReport
+- Added additional default field selections for DiagnosticReport, Composition, ServiceRequest, Observation, Specimen, OperationOutcome, AuditEvent, extension, DocumentReference, Binary and Provenance
+- Significantly improved the Excel export feature, including UI for export progress and improved error detection. Problems will be automatically handled and added to a warnings sheet
+- Excel export will now automatically be exported to an encrypted ZIP folder, a password to unlock the Excel file will be provided when exporting
+- Added a multipage export option instead of just the current selection. Fhindr will automatically page through all available pages and combine the results 
+- Added request timing, all requests will now be timed, and an overview will be shown with detailed timing on every step in the request
+- Added a cancel option so requests can be canceled when they hang or take too long to complete
+- Added a resource counter to easily see how many resources are in the FHIR bundle
+- Renamed the request options to tools to make export tool easier to find
+- Increased the number of queries that will be saved to the history from 5 to 15 based on user feedback
+- Decreased signed JWT expire time from 2 minutes to 1 minute to be in line with Belgian requirements
+- Updated error handling so all errors will now automatically be wrapped in OperationOutcomes, this will allow all errors to be visualized in the table view
+- Updated configuration fields to automatically strip leading and trailing spaces
+- Updated table headers in Excel export to be dot seperated instead of double underscore
+- Changed the main table so all columns have a minimum width, the column will become scrollable when there are a lot of selected fields. This will avoid columns becoming unreadable
+- Added a confirmation dialog when deleting favorited queries
+- Updated reference detection so Binary references inside uri fields will be recognized as a clickable FHIR reference
+- Increased minimum height for the server configuration modal to avoid height changes when switching tabs
+- Minor UI improvements and security updates
+- Make sure Excel export no longer silently fails when the target file is locked by another process
+- Fixed a bug where the main table would not be able to load when separate extensions were included as part of the entry array of a search result
+- Fixed a bug where metadata was no longer part of the selectable resources
+- Fixed a bug where the field selector could show the wrong fields after disconnecting from a repository while a different resource than the main resource was still selected
+- Fixed a bug where the selected algorithm wouldn't be included in the repository export
+
 # 1.3.3
 
 - HTML div elements will now be recognized in the table as an interactable cell and will be rendered when clicked
