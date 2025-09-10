@@ -1,7 +1,7 @@
 # 1.4.1
 
 - Cancelling a request during the interactive login will now also close the authentication window
-- Prevent a potential crash that could occur when the interactive login window was being closed after successful authentication
+- Prevent a potential crash that could occur while the interactive login window was being closed after successful authentication
 
 # 1.4.0
 
