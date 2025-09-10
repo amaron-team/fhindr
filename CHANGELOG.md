@@ -1,3 +1,8 @@
+# 1.4.1
+
+- Cancelling a request during the interactive login will now also close the authentication window
+- Prevent a potential crash that could occur when the interactive login window was being closed after successful authentication
+
 # 1.4.0
 
 - Added support for drag and drop FHIR visualization. Take any valid FHIR resource, and Fhindr will visualize it in the same way as if it came from a repository. Referenced resources will be clickable if they are contained within the resource
