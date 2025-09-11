@@ -1,3 +1,8 @@
+# 1.4.2
+
+- Make sure a more detailed error message is returned when AI fails to generate a valid response
+- Resolved an issue where AI integration could fail to generate a valid response
+
 # 1.4.1
 
 - Cancelling a request during the interactive login will now also close the authentication window
