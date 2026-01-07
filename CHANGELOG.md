@@ -1,3 +1,11 @@
+# 1.4.4
+
+- Removed Christmas Edition
+
+# 1.4.3
+
+- Christmas Edition
+  
 # 1.4.2
 
 - Make sure a more detailed error message is returned when AI fails to generate a valid response
