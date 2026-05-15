@@ -28,6 +28,7 @@
 - Added Import/Export functionality for favorited queries
 - Made user-defined table widths persistent
 
+
 - Heavily optimized JSON view component to handle extremely large datasets
 - Improved search bar (Ctrl+F) focus when opening and closing the search bar
 - Updated field selector search to filter keys instead of just highlighting matches
@@ -44,6 +45,7 @@
 - Security updates and various backend performance optimizations
 - Small UI sizing tweaks and general improvements
 - No longer add trailing slashes to search URLs
+
 
 - Fixed a bug where search POST requests could fail when using custom ports
 - Fixed a bug where authentication windows could hang if a login step encountered an error
