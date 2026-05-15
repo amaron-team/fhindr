@@ -1,3 +1,63 @@
+# 1.5.0
+
+- Added a Master Password to secure configurations and allow logging secrets in the debug report
+- Added Fhindr Pro mode that unlocks more advanced features for users with deeper FHIR expertise, Pro mode can be enabled in the settings
+- Added Advanced Logging and debug report generation for troubleshooting complex repository interactions
+- Added Create Mode, allowing for the creation of new FHIR resources with built-in validation and autocomplete
+- Added Custom Column support using FHIRPath or JSONPath expressions, including import/export functionality
+- Added a new menu option to Edit Resources, including a resource editor and a built-in live Diff Viewer
+- Added new menu option to Delete Resources, including Cascade Option
+- Added FHIR Proxy Mode, allowing external tools to use Fhindr as the authentication layer
+- Added a new menu option to perform $everything queries
+- Added a new menu option to display the current resource and all resolved referenced resources
+- Added a new menu option to unpack bundles into separately visualized resources with sorted observations
+- Added a new menu option to show Resource History
+- Added Breadcrumbs and back buttons for in-table sub-results ($everything, unpack, referenced resources, and history views)
+- Added a global settings screen with options for query history limit and From header field
+- Added Anthropic AI support and updated default AI models
+- Added Markdown and JSON support to the file viewer
+- Added attachment URL to the file viewer
+- Added a custom search bar to the repository table and the JSON view component
+- Added Base URL Alias to prevent UI issues with extremely long repository base URLs
+- Added a Test button to the repository configuration screen
+- Added support for fragmented reference URN codes in local FHIR bundles
+- Added a JWKS Key Selector when multiple certificates are hosted at the same URL
+- Added support for custom FHIR Station resource visualization
+- Added Identifier Cache for pseudonyms
+- Added an option to disable cache for testing authentication flows
+- Added Import/Export functionality for favorited queries
+- Made user-defined table widths persistent
+
+- Heavily optimized JSON view component to handle extremely large datasets
+- Improved search bar (Ctrl+F) focus when opening and closing the search bar
+- Updated field selector search to filter keys instead of just highlighting matches
+- Updated startup flow to ensure the application window size remains stable during initialization
+- Optimized custom modals for better initial content fitting and smoother animations
+- Updated excel export feature to use underscores instead of dot-separated headers for better compatibility with external tools
+- Updated default paging behavior to use GET requests even when primary queries use POST
+- Prefer keeping the same resource selected when paging through multi-resource results
+- Added a message when no data is available instead of rendering an empty page
+- Double-clicking an interactable cell no longer triggers single-click actions
+- Updated auto-update mechanics and UI
+- Updated Show JSON option to distinguish between the full search entry and the resource content
+- Pressing tab in the resource selector now selects the highlighted field instead of clearing it
+- Security updates and various backend performance optimizations
+- Small UI sizing tweaks and general improvements
+- No longer add trailing slashes to search URLs
+
+- Fixed a bug where search POST requests could fail when using custom ports
+- Fixed a bug where authentication windows could hang if a login step encountered an error
+- Fixed a bug where multiple = signs could cause parsing errors in the query builder
+- Fixed a bug where valueReference and valueUrl fields were unavailable in the field selector
+- Fixed a bug where OperationOutcome resources without IDs would fail to open in the detailed JSON view
+- Fixed a bug where importing repository configurations would sometimes ignore the selected algorithm
+- Fixed a bug where a query from history with no selected resource would not be automatically filled in
+- Fixed an issue where the search bar could lose focus while navigating results
+- Fixed an issue where multiple HTML fields in a single cell were not correctly recognized
+- Fixed a bug where the query history field could trigger an unexpected application refresh
+- Prevented table flicker caused by column width calculations during data loading
+- Ensured FHIR references in URL fields and JSON view are correctly recognized as clickable links
+
 # 1.4.4
 
 - Removed Christmas Edition
