@@ -34,7 +34,21 @@ View a short demo of Fhindr [on YouTube](https://www.youtube.com/watch?v=TDdmA6v
 
 Fhindr is available for Windows, Mac and Linux. Installers for the latest release can be found [here](https://github.com/amaron-team/fhindr/releases/latest).
 
+Or in the [Apple App Store](https://apps.apple.com/be/app/fhindr/id6745899772?mt=12)
+
 <br>
+
+Alternatively using Homebrew:
+
+Add the tap
+```bash
+brew tap amaron-team/fhindr
+```
+
+Install Fhindr
+```bash
+brew install --cask fhindr
+```
 
 <a name="user-guide"></a>
 ## User guide
