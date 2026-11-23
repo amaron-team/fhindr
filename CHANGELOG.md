@@ -1,3 +1,38 @@
+# 1.6.0
+
+- Added dark mode option
+- Added automated async query support for queries like $export. Includes automatic polling and download support
+- Added option to include a JSON body with search requests adn included indication in history
+- Added support for eHealth token exchange
+- Added support for eHealth free text field encryption
+- Added support for automatic UHMEP transformations
+- Added support for eHealth pseudo v2
+- Added option to send create requests as PUT or PATCH
+- Added certificate keystore import support to make certificate authentication configuration more user-friendly (supports .p12 / .pfx files)
+- Added option to reorder repositories manually in the repository list
+- Improved advanced debug logging to be more detailed
+- Added copy and hide buttons to debug report
+- Added ndjson rendering support (auto convert to JSON array)
+- Added a new right-click option to render the narrative
+
+- Autofill the resource type when pasting JSON content in CREATE mode
+- Added R4 context to FHIR Path expressions for custom columns
+- Separated custom HTTP headers for authentication and FHIR requests
+- Updated default columns for Appointment resource
+- Updated several modals to prevent loss of unsaved changes when closing the modal
+- Updated import feedback to more clearly indicate when nothing could be imported
+- Automatically filter sensitive information like secrets and certificates in debug exports
+- Restricted auto update behavior to prevent being flagged by antivirus during update
+- Security fixes and backend improvements
+
+- Fixed a bug where a / would be added to the POST path where it was not allowed
+- Fixed some calculation errors in the JSON viewer when displaying large base64 blobs
+- Fixed a bug where the test endpoint could error when the configuration was not saved yet
+- Fixed a bug where disconnecting from a repository while in create mode would prevent plain FHIR visualization from working
+- Fixed rare caching issue that could cause current session credentials to be lost
+- Fixed issue where master password would still be requested after resetting the password
+- Resolved an issue where pressing restart to update would update but not restart the application
+
 # 1.5.0
 
 - Added a Master Password to secure configurations and allow logging secrets in the debug report
