@@ -14,6 +14,8 @@
 - Added copy and hide buttons to debug report
 - Added ndjson rendering support
 - Added a new right-click option to render the narrative
+  
+<br>
 
 - Autofill the resource type when pasting JSON content in CREATE mode
 - Added R4 context to FHIR Path expressions for custom columns
@@ -24,6 +26,8 @@
 - Automatically filter sensitive information like secrets and certificates in debug exports
 - Restricted auto update behavior to prevent being flagged by antivirus during update
 - Security fixes and backend improvements
+  
+<br>
 
 - Fixed a bug where a / would be added to the POST path where it was not allowed
 - Fixed some calculation errors in the JSON viewer when displaying large base64 blobs
