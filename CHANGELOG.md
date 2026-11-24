@@ -2,7 +2,7 @@
 
 - Added dark mode option
 - Added automated async query support for queries like $export. Includes automatic polling and download support
-- Added option to include a JSON body with search requests adn included indication in history
+- Added option to include a JSON body with search requests and included indication in history
 - Added support for eHealth token exchange
 - Added support for eHealth free text field encryption
 - Added support for automatic UHMEP transformations
