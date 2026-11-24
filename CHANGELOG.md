@@ -12,7 +12,7 @@
 - Added option to reorder repositories manually in the repository list
 - Improved advanced debug logging to be more detailed
 - Added copy and hide buttons to debug report
-- Added ndjson rendering support (auto convert to JSON array)
+- Added ndjson rendering support
 - Added a new right-click option to render the narrative
 
 - Autofill the resource type when pasting JSON content in CREATE mode
